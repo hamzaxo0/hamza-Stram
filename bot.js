@@ -18,9 +18,6 @@ setTimeout(() => mohamed.send(`**Ꮃelcome Ꭲo Ꮪerver Soul ..**`), 5000)
 
 });
 
-
-
-
 const devs = ['288368249194938368' , '' , ''];
 
 const adminprefix = "H";
