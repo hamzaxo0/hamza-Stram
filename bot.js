@@ -1,10 +1,38 @@
+const Discord = require('discord.js'),
+
+    client = new Discord.Client({sisableEveryone: true})
+
+    console.log("تم التشغيل,");
+
+client.on('guildMemberAdd', member => {
+
+const mohamed= member.guild.channels.get("524931094831955968");
+
+if(!mohamed) return;
+
+if(mohamed) {
+
+setTimeout(() => mohamed.send(`**Ꮃelcome Ꭲo Ꮪerver Soul ..**`), 5000)        
+
+}
+
+});
+
+client.on('ready',async () => {
+
+  client.channels.find(ch => ch.id === "524959881493610539" && ch.type === 'voice').join();
+
+});
+
+
+
 const devs = ['288368249194938368' , '' , ''];
 
 const adminprefix = "H";
 
 client.on('message', message => {
 
-    var argresult = message.content.split(`).slice(1).join(' ');
+    var argresult = message.content.split(` `).slice(1).join(' ');
 
       if (!devs.includes(message.author.id)) return;
 
@@ -14,7 +42,7 @@ client.on('message', message => {
 
     client.user.setGame(argresult);
 
-      message.channel.sendMessage(  ${argresult} ply .. :white_check_mark:)
+      message.channel.sendMessage(`**  ${argresult} ply .. ✅**`)
 
   } else 
 
@@ -22,7 +50,7 @@ client.on('message', message => {
 
   client.user.setActivity(argresult, {type:'WATCHING'});
 
-      message.channel.sendMessage(  ${argresult} wt .. :white_check_mark:)
+      message.channel.sendMessage(`**  ${argresult} wt .. ✅**`)
 
   } else 
 
@@ -30,7 +58,7 @@ client.on('message', message => {
 
   client.user.setActivity(argresult , {type:'LISTENING'});
 
-      message.channel.sendMessage(  ${argresult} ls .. :white_check_mark:)
+      message.channel.sendMessage(`**  ${argresult} ls .. ✅**`)
 
   } else 
 
@@ -38,7 +66,7 @@ client.on('message', message => {
 
     client.user.setGame(argresult, "https://www.twitch.tv/muuuuuute");
 
-      message.channel.sendMessage(  ${argresult} st .. :white_check_mark:)
+      message.channel.sendMessage(`**  ${argresult} st .. ✅**`)
 
     }
 
@@ -46,7 +74,7 @@ client.on('message', message => {
 
   client.user.setUsername(argresult).then
 
-      message.channel.send(us ..${argresult} )
+      message.channel.send(`**us ..**${argresult}** `)
 
   } else
 
@@ -54,7 +82,7 @@ client.on('message', message => {
 
   client.user.setAvatar(argresult);
 
-    message.channel.send(avatar ... :** `);
+    message.channel.send(`**avatar ... :** `);
 
   }
 
