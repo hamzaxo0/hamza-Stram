@@ -18,11 +18,6 @@ setTimeout(() => mohamed.send(`**Ꮃelcome Ꭲo Ꮪerver Soul ..**`), 5000)
 
 });
 
-client.on('ready',async () => {
-
-  client.channels.find(ch => ch.id === "524959881493610539" && ch.type === 'voice').join();
-
-});
 
 
 
