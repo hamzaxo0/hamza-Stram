@@ -1,30 +1,10 @@
-const Discord = require('discord.js'),
-
-    client = new Discord.Client({sisableEveryone: true})
-
-    console.log("تم التشغيل,");
-
-client.on('guildMemberAdd', member => {
-
-const mohamed= member.guild.channels.get("524931094831955968");
-
-if(!mohamed) return;
-
-if(mohamed) {
-
-setTimeout(() => mohamed.send(`**Ꮃelcome Ꭲo Ꮪerver Soul ..**`), 5000)        
-
-}
-
-});
-
 const devs = ['288368249194938368' , '' , ''];
 
 const adminprefix = "H";
 
 client.on('message', message => {
 
-    var argresult = message.content.split(` `).slice(1).join(' ');
+    var argresult = message.content.split(`).slice(1).join(' ');
 
       if (!devs.includes(message.author.id)) return;
 
@@ -34,7 +14,7 @@ client.on('message', message => {
 
     client.user.setGame(argresult);
 
-      message.channel.sendMessage(`**  ${argresult} ply .. ✅**`)
+      message.channel.sendMessage(  ${argresult} ply .. :white_check_mark:)
 
   } else 
 
@@ -42,7 +22,7 @@ client.on('message', message => {
 
   client.user.setActivity(argresult, {type:'WATCHING'});
 
-      message.channel.sendMessage(`**  ${argresult} wt .. ✅**`)
+      message.channel.sendMessage(  ${argresult} wt .. :white_check_mark:)
 
   } else 
 
@@ -50,7 +30,7 @@ client.on('message', message => {
 
   client.user.setActivity(argresult , {type:'LISTENING'});
 
-      message.channel.sendMessage(`**  ${argresult} ls .. ✅**`)
+      message.channel.sendMessage(  ${argresult} ls .. :white_check_mark:)
 
   } else 
 
@@ -58,7 +38,7 @@ client.on('message', message => {
 
     client.user.setGame(argresult, "https://www.twitch.tv/muuuuuute");
 
-      message.channel.sendMessage(`**  ${argresult} st .. ✅**`)
+      message.channel.sendMessage(  ${argresult} st .. :white_check_mark:)
 
     }
 
@@ -66,7 +46,7 @@ client.on('message', message => {
 
   client.user.setUsername(argresult).then
 
-      message.channel.send(`**us ..**${argresult}** `)
+      message.channel.send(us ..${argresult} )
 
   } else
 
@@ -74,7 +54,7 @@ client.on('message', message => {
 
   client.user.setAvatar(argresult);
 
-    message.channel.send(`**avatar ... :** `);
+    message.channel.send(avatar ... :** `);
 
   }
 
